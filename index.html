@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TaskFlow — gestionnaire de tâches d'équipe pour organiser, attribuer et suivre les projets.">
+  <meta name="theme-color" content="#2D2D2D">
+  <title>TaskFlow — Gestionnaire de tâches d'équipe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- SITE VITRINE / ACCUEIL -->
+  <section id="landing-view">
+    <header class="public-header">
+      <a class="brand" href="#accueil" aria-label="TaskFlow Accueil">
+        <span class="brand-mark">✓</span>
+        <span>Task<span>Flow</span></span>
+      </a>
+      <nav class="public-nav">
+        <a class="active" href="#accueil">Accueil</a>
+        <a href="#fonctionnalites">Fonctionnalités</a>
+        <a href="#methode">Comment ça marche</a>
+        <a href="#equipes">Pour les équipes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="public-actions">
+        <button class="link-btn" data-open-auth="login">Se connecter</button>
+        <button class="btn btn-dark" data-open-app>Ouvrir TaskFlow <span>→</span></button>
+      </div>
+      <button class="mobile-menu-btn" id="public-menu-btn" aria-expanded="false" aria-label="Menu">☰</button>
+    </header>
+
+    <main>
+      <section id="accueil" class="landing-hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-inner container">
+          <p class="eyebrow light">ORGANISER · COLLABORER · AVANCER</p>
+          <h1>Le travail d'équipe,<br><em>enfin maîtrisé.</em></h1>
+          <p class="hero-lead">Attribuez les bonnes tâches aux bonnes personnes, suivez les échéances et gardez toute votre équipe alignée dans un seul espace.</p>
+          <div class="hero-actions">
+            <button class="btn btn-orange" data-open-app>Ouvrir mon espace <span>→</span></button>
+            <a class="hero-link" href="#fonctionnalites">Découvrir TaskFlow <span>↗</span></a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-avatars"><i>AM</i><i>MK</i><i>SN</i><i>JM</i></div>
+            <span>Un espace pensé pour les équipes de tous secteurs</span>
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <span>TaskFlow</span>
+          <span>Gestion de projets · Tâches · Équipe</span>
+          <a href="#presentation">↓ Explorer</a>
+        </div>
+      </section>
+
+      <section id="presentation" class="landing-section intro-section">
+        <div class="container split-heading">
+          <div>
+            <p class="eyebrow">UNE VISION CLAIRE</p>
+            <h2>Chaque tâche a sa place.<br><em>Chaque équipe, son rythme.</em></h2>
+          </div>
+          <div class="intro-copy">
+            <p>TaskFlow remplace les messages dispersés, les feuilles de calcul oubliées et les échéances perdues par un espace visuel où chacun sait quoi faire, pour quand et avec quelle priorité.</p>
+            <a class="text-link" href="#fonctionnalites">Découvrir les fonctionnalités <span>→</span></a>
+          </div>
+        </div>
+        <div class="container metrics">
+          <div><strong>100%</strong><span>Visibilité sur vos tâches</span></div>
+          <div><strong>24/7</strong><span>Suivi des projets</span></div>
+          <div><strong>1</strong><span>Espace pour votre équipe</span></div>
+          <div><strong>∞</strong><span>Façons de vous organiser</span></div>
+        </div>
+      </section>
+
+      <section class="landing-dashboard-band">
+        <div class="container split-dashboard">
+          <div class="dashboard-pitch">
+            <p class="eyebrow light">VOTRE ESPACE DE TRAVAIL</p>
+            <h2>Voyez le travail<br><em>prendre forme.</em></h2>
+            <p>Un tableau de bord simple pour visualiser les tâches à faire, les travaux en cours, les blocages et ce qui vient d'être terminé.</p>
+            <button class="btn btn-light" data-open-app>Explorer le tableau de bord <span>→</span></button>
+          </div>
+          <div class="mini-app-preview">
+            <div class="mini-top"><span></span><span></span><span></span><b>TaskFlow / Lancement produit</b></div>
+            <div class="mini-body">
+              <aside><strong>TaskFlow</strong><small>▦ Tableau</small><small>✓ Mes tâches</small><small>◷ Calendrier</small><small>♙ Équipe</small></aside>
+              <div class="mini-content">
+                <div class="mini-title"><div><small>PROJET</small><h3>Lancement produit</h3></div><button>+ Tâche</button></div>
+                <div class="mini-progress"><span>Progression</span><b>68%</b></div>
+                <div class="mini-line"><i></i></div>
+                <div class="mini-kanban">
+                  <div><b>À faire</b><article><small>Urgent</small><strong>Préparer le brief</strong><span>Demain · Amina</span></article><article><small>Design</small><strong>Valider les visuels</strong><span>12 oct. · Joël</span></article></div>
+                  <div><b>En cours</b><article><small>Web</small><strong>Page d'accueil</strong><span>Aujourd'hui · Marc</span></article><article><small>Contenu</small><strong>Textes campagne</strong><span>14 oct. · Sarah</span></article></div>
+                  <div class="mini-done"><b>Terminé</b><article><strong>Planning équipe</strong><span>✓ terminé</span></article><article><strong>Budget</strong><span>✓ terminé</span></article></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fonctionnalites" class="landing-section features-section">
+        <div class="container">
+          <div class="split-heading feature-heading">
+            <div>
+              <p class="eyebrow">TOUT CE QU'IL VOUS FAUT</p>
+              <h2>Moins de dispersion.<br><em>Plus d'action.</em></h2>
+            </div>
+            <p>Que vous travailliez dans une agence, une PME, une administration, une association ou une équipe technique, TaskFlow s'adapte à votre organisation.</p>
+          </div>
+          <div class="feature-grid">
+            <article><span>01</span><div class="feature-icon">↗</div><h3>Attribuez clairement</h3><p>Responsable, priorité, description et date limite réunis au même endroit.</p></article>
+            <article><span>02</span><div class="feature-icon">◷</div><h3>Suivez les échéances</h3><p>Repérez immédiatement ce qui arrive aujourd'hui, demain ou ce qui est déjà en retard.</p></article>
+            <article><span>03</span><div class="feature-icon">✓</div><h3>Visualisez les statuts</h3><p>À faire, en cours, en attente ou terminé : votre équipe possède la même information.</p></article>
+            <article><span>04</span><div class="feature-icon">♙</div><h3>Travaillez ensemble</h3><p>Centralisez projets, membres, commentaires, fichiers et responsabilités.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="methode" class="landing-section method-section">
+        <div class="container method-grid">
+          <div class="method-image">
+            <div class="image-card-caption"><small>01</small><b>Une organisation naturelle</b><span>Simple à prendre en main</span></div>
+          </div>
+          <div>
+            <p class="eyebrow">COMMENT ÇA MARCHE</p>
+            <h2>Du premier brief<br><em>au résultat final.</em></h2>
+            <div class="method-steps">
+              <div class="method-step active"><b>01</b><div><h3>Créez votre projet</h3><p>Rassemblez les personnes et donnez un objectif clair au projet.</p></div></div>
+              <div class="method-step"><b>02</b><div><h3>Découpez le travail</h3><p>Transformez l'objectif en tâches concrètes avec responsable et échéance.</p></div></div>
+              <div class="method-step"><b>03</b><div><h3>Suivez l'avancement</h3><p>Faites évoluer les statuts dans la liste ou le Kanban.</p></div></div>
+              <div class="method-step"><b>04</b><div><h3>Analysez les résultats</h3><p>Consultez les rapports, la progression et les tâches en retard.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="equipes" class="landing-section team-section">
+        <div class="container team-promise">
+          <div>
+            <p class="eyebrow">POUR TOUTES LES ÉQUIPES</p>
+            <h2>Une méthode claire,<br><em>quel que soit votre métier.</em></h2>
+          </div>
+          <div class="promise-card">
+            <span>“</span>
+            <blockquote>Enfin un espace où je peux savoir qui fait quoi, pour quand, et ce qui bloque.</blockquote>
+            <div><i>CM</i><p><b>Claire M.</b><small>Responsable de projet</small></p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="landing-cta">
+        <div class="container cta-inner">
+          <p class="eyebrow light">PRÊT À COMMENCER ?</p>
+          <h2>Votre équipe mérite<br><em>moins de chaos.</em></h2>
+          <p>Commencez avec la démo et construisez votre propre espace de travail.</p>
+          <button class="btn btn-orange" data-open-app>Accéder à mon espace <span>→</span></button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="public-footer">
+      <div class="container footer-grid">
+        <div><a class="brand footer-brand" href="#accueil"><span class="brand-mark">✓</span><span>Task<span>Flow</span></span></a><p>Le gestionnaire de tâches d'équipe pensé pour les vrais projets.</p></div>
+        <div><h4>Navigation</h4><a href="#accueil">Accueil <p></p></a><a href="#fonctionnalites">Fonctionnalités <p></p></a><a href="#methode">Comment ça marche <p></p></a></div>
+        <div><h4>Produit</h4><button class="footer-link" data-open-app>Tableau de bord <p></p></button><a href="#equipes">Pour les équipes <p></p></a><a href="#contact">Contact</a></div>
+        <div><h4>Contact</h4><a href="mailto:mantonych@gmail.com">mantonych@gmail.com <p></p></a><a href="tel:+242064723906">+242 064723906</a></div>
+      </div>
+      <div class="container footer-bottom"><span>© 2026 TaskFlow. Tous droits réservés.</span><span>Responsive · Accessible · HTML · CSS · JavaScript</span></div>
+    </footer>
+  </section>
+
+  <!-- AUTH -->
+  <section id="auth-view" class="auth-view hidden">
+    <div class="auth-brand"><span class="brand-mark">✓</span><b>Task<span>Flow</span></b></div>
+    <button class="back-home" data-back-home>← Retour à l'accueil</button>
+    <div class="auth-card">
+      <div class="auth-visual">
+        <p class="eyebrow light">VOTRE ESPACE DE TRAVAIL</p>
+        <h1>Le travail d'équipe,<br><em>enfin maîtrisé.</em></h1>
+        <p>Retrouvez vos tâches, vos projets, votre calendrier et votre équipe dans un seul espace.</p>
+        <div class="auth-note">✓ Les données de cette démo sont sauvegardées dans votre navigateur.</div>
+      </div>
+      <div class="auth-form-side">
+        <div class="auth-tabs"><button class="auth-tab active" data-auth-tab="login">Connexion</button><button class="auth-tab" data-auth-tab="register">Créer un compte</button></div>
+        <form id="login-form">
+          <h2>Bon retour.</h2><p class="muted">Connectez-vous pour retrouver votre espace.</p>
+          <label>Email<input id="login-email" type="email" value="admin@taskflow.local" required></label>
+          <label>Mot de passe<input id="login-password" type="password" value="admin123" required></label>
+          <button class="btn btn-dark full" type="submit">Se connecter <span>→</span></button>
+          <p class="demo-login">Démo : <b>admin@taskflow.local</b> / <b>admin123</b></p>
+        </form>
+        <form id="register-form" class="hidden">
+          <h2>Créer votre espace.</h2><p class="muted">Créez un compte local pour cette démo.</p>
+          <label>Nom complet<input id="register-name" required></label>
+          <label>Email<input id="register-email" type="email" required></label>
+          <label>Mot de passe<input id="register-password" type="password" minlength="6" required></label>
+          <button class="btn btn-dark full" type="submit">Créer mon compte <span>→</span></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLICATION -->
+  <section id="app-view" class="app-view hidden">
+    <aside class="app-sidebar" id="app-sidebar">
+      <div class="side-head">
+        <a class="brand side-brand" href="#accueil" data-back-home><span class="brand-mark">✓</span><span>Task<span>Flow</span></span></a>
+        <button class="close-side" id="close-side">×</button>
+      </div>
+      <div class="workspace-chip"><span>TF</span><div><b>Mon espace</b><small>Équipe principale</small></div><i>⌄</i></div>
+      <nav class="app-nav">
+        <a href="#dashboard" data-app-page="dashboard">▦ <span>Tableau de bord</span></a>
+        <a href="#tasks" data-app-page="tasks">✓ <span>Tâches</span><b id="nav-active-tasks"></b></a>
+        <a href="#projects" data-app-page="projects">▱ <span>Projets</span></a>
+        <a href="#calendar" data-app-page="calendar">◷ <span>Calendrier</span></a>
+        <a href="#team" data-app-page="team">♙ <span>Équipe</span></a>
+        <a href="#reports" data-app-page="reports">◒ <span>Rapports</span></a>
+      </nav>
+      <small class="nav-title">ESPACE</small>
+      <nav class="app-nav">
+        <a href="#notifications" data-app-page="notifications">♢ <span>Notifications</span><b id="nav-unread"></b></a>
+        <a href="#settings" data-app-page="settings">⚙ <span>Paramètres</span></a>
+      </nav>
+      <div class="side-bottom">
+        <button class="help-box" id="help-btn"><b>Besoin d'aide ?</b><span>Voir le guide rapide →</span></button>
+        <button class="account-box" id="account-btn"><span class="user-avatar" id="side-avatar">AC</span><span><b id="side-user-name">Antony</b><small id="side-user-role">Administrateur</small></span><i>•••</i></button>
+      </div>
+    </aside>
+
+    <div class="app-main">
+      <header class="app-topbar">
+        <button class="open-side" id="open-side">☰</button>
+        <div class="app-breadcrumb"><span>TaskFlow</span><b>/</b><strong id="app-page-title">Tableau de bord</strong></div>
+        <div class="app-tools">
+          <div class="app-search"><span>⌕</span><input id="global-search" placeholder="Rechercher..."><kbd>Ctrl K</kbd></div>
+          <button class="top-icon" id="new-task-top">＋</button>
+          <button class="top-icon notify-top" data-app-route="notifications">♢<i id="notify-dot"></i></button>
+          <button class="top-account" id="top-account"><span class="user-avatar" id="top-avatar">AC</span><span id="top-name">Antony</span><b>⌄</b></button>
+        </div>
+      </header>
+      <main id="app-page-content"></main>
+    </div>
+  </section>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-bg" data-close-modal></div>
+    <div class="modal-window"><button class="modal-close" data-close-modal>×</button><div id="modal-content"></div></div>
+  </div>
+  <div id="toast-area"></div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
